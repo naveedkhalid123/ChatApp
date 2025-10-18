@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6716E5522EA35B1D0034F2A9 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6716E5512EA35B1D0034F2A9 /* IQKeyboardManagerSwift */; };
+		6716E5552EA35E580034F2A9 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6716E5542EA35E400034F2A9 /* Extension+UIViewController.swift */; };
 		674451E72EA216D4004080EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 674451E62EA216D4004080EF /* GoogleService-Info.plist */; };
 		674451EA2EA2175C004080EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 674451E92EA2175C004080EF /* FirebaseAuth */; };
 		674451EC2EA2175C004080EF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 674451EB2EA2175C004080EF /* FirebaseDatabase */; };
 		674451EE2EA2175C004080EF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 674451ED2EA2175C004080EF /* FirebaseFirestore */; };
 		674451F02EA2175C004080EF /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 674451EF2EA2175C004080EF /* FirebaseMessaging */; };
 		674451F22EA2175C004080EF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 674451F12EA2175C004080EF /* FirebaseStorage */; };
+		6799B2B22EA3992600D5AB82 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6799B2B12EA3992500D5AB82 /* LoadingView.xib */; };
+		6799B2B62EA3999100D5AB82 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6799B2B52EA3999100D5AB82 /* LoadingView.swift */; };
 		E12D57D72A6B3FD600D556EF /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D57D62A6B3FD600D556EF /* PrimaryButton.swift */; };
 		E12D58062A6CAE8F00D556EF /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12D58052A6CAE8F00D556EF /* Extension+UIColor.swift */; };
 		E13089A82A69EDB600C1889D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13089A72A69EDB600C1889D /* AppDelegate.swift */; };
@@ -29,7 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6716E5542EA35E400034F2A9 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
 		674451E62EA216D4004080EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6799B2B12EA3992500D5AB82 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		6799B2B52EA3999100D5AB82 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		E12D57D62A6B3FD600D556EF /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		E12D58052A6CAE8F00D556EF /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		E13089A42A69EDB600C1889D /* ChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,12 +64,31 @@
 				674451EA2EA2175C004080EF /* FirebaseAuth in Frameworks */,
 				674451F22EA2175C004080EF /* FirebaseStorage in Frameworks */,
 				674451EE2EA2175C004080EF /* FirebaseFirestore in Frameworks */,
+				6716E5522EA35B1D0034F2A9 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6716E5532EA35E2B0034F2A9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6716E5542EA35E400034F2A9 /* Extension+UIViewController.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6799B2B02EA398EC00D5AB82 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E12D57D62A6B3FD600D556EF /* PrimaryButton.swift */,
+				6799B2B12EA3992500D5AB82 /* LoadingView.xib */,
+				6799B2B52EA3999100D5AB82 /* LoadingView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		E130899B2A69EDB600C1889D = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +108,7 @@
 		E13089A62A69EDB600C1889D /* ChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				6716E5532EA35E2B0034F2A9 /* Extensions */,
 				E13089CB2A69FFEF00C1889D /* Design */,
 				E13089C02A69F00D00C1889D /* Storyboards */,
 				E13089BE2A69EEC500C1889D /* ViewControllers */,
@@ -117,9 +144,9 @@
 		E13089CB2A69FFEF00C1889D /* Design */ = {
 			isa = PBXGroup;
 			children = (
+				6799B2B02EA398EC00D5AB82 /* Components */,
 				E13089C32A69F24800C1889D /* Font.swift */,
 				E13089C12A69F02200C1889D /* Colors.xcassets */,
-				E12D57D62A6B3FD600D556EF /* PrimaryButton.swift */,
 				E12D58052A6CAE8F00D556EF /* Extension+UIColor.swift */,
 			);
 			path = Design;
@@ -171,6 +198,7 @@
 			mainGroup = E130899B2A69EDB600C1889D;
 			packageReferences = (
 				674451E82EA2175C004080EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6716E5502EA35B1D0034F2A9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = E13089A52A69EDB600C1889D /* Products */;
 			projectDirPath = "";
@@ -190,6 +218,7 @@
 				E13089BC2A69EE7C00C1889D /* Auth.storyboard in Resources */,
 				E13089B42A69EDBB00C1889D /* LaunchScreen.storyboard in Resources */,
 				E13089B12A69EDBB00C1889D /* Assets.xcassets in Resources */,
+				6799B2B22EA3992600D5AB82 /* LoadingView.xib in Resources */,
 				E13089AF2A69EDB600C1889D /* Main.storyboard in Resources */,
 				674451E72EA216D4004080EF /* GoogleService-Info.plist in Resources */,
 			);
@@ -205,8 +234,10 @@
 				E13089C82A69FC1700C1889D /* CreateAccountViewController.swift in Sources */,
 				E13089C42A69F24800C1889D /* Font.swift in Sources */,
 				E13089A82A69EDB600C1889D /* AppDelegate.swift in Sources */,
+				6799B2B62EA3999100D5AB82 /* LoadingView.swift in Sources */,
 				E13089C62A69FBF400C1889D /* SignInViewController.swift in Sources */,
 				E12D57D72A6B3FD600D556EF /* PrimaryButton.swift in Sources */,
+				6716E5552EA35E580034F2A9 /* Extension+UIViewController.swift in Sources */,
 				E13089CA2A69FCD300C1889D /* HomeViewController.swift in Sources */,
 				E13089AA2A69EDB600C1889D /* SceneDelegate.swift in Sources */,
 				E12D58062A6CAE8F00D556EF /* Extension+UIColor.swift in Sources */,
@@ -435,6 +466,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6716E5502EA35B1D0034F2A9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.1;
+			};
+		};
 		674451E82EA2175C004080EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -446,6 +485,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		6716E5512EA35B1D0034F2A9 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6716E5502EA35B1D0034F2A9 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
 		674451E92EA2175C004080EF /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 674451E82EA2175C004080EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
